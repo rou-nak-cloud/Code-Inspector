@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "code review",
+  "keywords": [
+    "review",
+    "code",
+    "check",
+    "ai"
+  ],
+  "license": "ISC",
+  "author": "rounak bakshi",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "genai": "^0.0.18",
+    "generative-ai": "^0.1.4",
+    "gitignore": "^0.7.0",
+    "nodemon": "^3.1.10"
+  }
+}
