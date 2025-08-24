@@ -8,10 +8,17 @@ import { useState } from "react";
 import Editor from 'react-simple-code-editor'
 import { useRef } from "react";
 
-const CodeBlock = ({ language = "javascript", initialCode = "" }) => {
+const CodeBlock = ({ language = "javascript", initialCode = "", onChange }) => {
     const [code, setCode] = useState(initialCode)
      const [isFocused, setIsFocused] = useState(false);
     const editorRef = useRef(null);
+
+    const handleChange = (newCode) =>{
+        setCode(newCode);
+        // "Did the parent give me an onChange function? Or am I alone here?"
+        if (onChange) onChange(newCode) // send code back to Ui
+        // "Parent, here’s the latest code I’ve got — do whatever you want with it (store it in state, send to API etc.)."
+    }
 
   useEffect(() => {
     Prism.highlightAll();
@@ -34,7 +41,7 @@ const CodeBlock = ({ language = "javascript", initialCode = "" }) => {
     <Editor 
     ref={editorRef}
         value={code}
-        onValueChange={code => setCode(code)}
+        onValueChange={handleChange}
         highlight={code => Prism.highlight(code,Prism.languages[language],language)}
         padding={10}
         onFocus={() => setIsFocused(true)}
