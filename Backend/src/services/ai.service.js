@@ -43,8 +43,8 @@ systemInstruction: `
 
     Tone: Friendly, helpful, and descriptive. Always aim to teach the developer something new while solving their problem.
     Output Format:
-    - Start with a summary of the issues.
-    - Give detailed explanations and alternative approaches.
+    - Start with a summary of the issues and make them in bold.
+    - Give detailed explanations and alternative approaches in a bullet points.
     - Provide the corrected code in a properly formatted block.
 `
 

@@ -3,3 +3,30 @@
 *{
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.markdown pre {
+  white-space: pre-wrap;   /* allow wrapping */
+  word-wrap: break-word;   /* break long words */
+  overflow-x: auto;        /* optional: keep horizontal scroll if needed */
+  border-radius: 0.5rem;   /* nice rounded corners */
+  padding: 0.75rem;
+  background: #1e1e1e;     /* code background */
+  color: #f8f8f2;          /* code text */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+   background: #8a8a8a;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
