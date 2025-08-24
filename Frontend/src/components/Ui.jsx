@@ -13,7 +13,7 @@ const Ui = () => {
   }
   console.log(greet("World"));`)
 
-    const [review, setReview] = useState(`👋 Welcome to GenAI Reviewer — your expert dev assistant! Paste your code on the left and click *Review* to get feedback.`)
+    const [review, setReview] = useState(`🤖 Welcome to GenAI Reviewer — your expert dev assistant! Paste your code on the left and click *Review* to get feedback.`)
     const [loading, setLoading] = useState(false);
 
   
@@ -55,7 +55,7 @@ const Ui = () => {
                         <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent border-b-transparent rounded-full animate-spin"></div>
                         <p className="font-mono text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">Reviewing your code...</p>
                        </div>
-                ) : review.startsWith("👋") ? (
+                ) : review.startsWith("🤖") ? (
                     // Welcome Hero
                     <div className="text-center max-w-2xl mx-auto sm:pt-60 max-sm:pt-10">
                         <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug select-none">
