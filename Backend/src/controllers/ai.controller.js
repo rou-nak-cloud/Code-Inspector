@@ -1,7 +1,7 @@
 import aiService from '../services/ai.service.js'
 
 const getReview = async(req,res)=>{
-    const code = req.body.prompt;
+    const code = req.body.code;
    try {
      if(!code){
          return res.status(400).send('Prompt is required')
