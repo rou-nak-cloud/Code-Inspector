@@ -29,7 +29,13 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 // Initialize with API Key
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEMINI_KEY);
 // Pick the model
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash",
+systemInstruction: `
+    You are an code reviewer, who have an expertise in development. You look for the code and find the problems and suggest the solutions to the developer.
+    You always try to find the best solution for the developer and also try to make the code more efficient and clean.
+`
+
+ });
 
 // async function main() {
     //   const prompt = "Explain how AI works in a few words";
