@@ -1,5 +1,5 @@
 import React from 'react'
-import Ui from './components/ui'
+import Ui from './components/Ui'
 
 
 const App = () => {
