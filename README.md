@@ -4,8 +4,8 @@ A full-stack **AI-powered code review tool** that helps developers instantly ana
 This project uses **Google Gemini AI** as the reviewer engine, with a **Node.js/Express backend** and a modern **React + TailwindCSS frontend**.
 
 ---
-## Live in Air
-- **CodeChecker.Ai.co**[https://codecheck-ai-co.onrender.com]
+## Live in Air [https://codecheck-ai-co.onrender.com]
+- **CodeChecker.Ai.co**
 
 ## ✨ Features
 
