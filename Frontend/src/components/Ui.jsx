@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './navbar'
+import Navbar from './Navbar'
 import CodeBlock from './CodeBlock';
 import axios from 'axios'
 import { useState } from 'react';
